@@ -1,0 +1,39 @@
+
+
+
+    
+<body>
+    <main>
+        <header>
+            <h1>Selecione uma Cifra</h1>
+            <select onchange="changeCipher() "name="" id="selectCipher">
+                <option value="" disabled selected> Escolha uma cifra</option>
+                <option value="caesar">Cifra de Caesar</option>
+                <option value="base64">base64</option>
+                
+            </select>
+            
+            <form id="radioCod" onchange="codeOrDecode()">
+                
+                <input type="radio" id="cod" name="codOuDecod" checked="checked" value="cod">
+                <label for="cod">Codificar</label><br>
+                <input type="radio" id="decod" name="codOuDecod"  value="decod">
+                <label for="decod">Decodificar</label><br>
+                
+            </form>
+        </header>
+        <div id="caesar">
+            <section>
+                <input type="number" default="0" id="key" onkeyup="codeOrDecode()" placeholder="Digite a chave"><br>
+                <textarea name="caesar" id="inputCaesar" placeholder="Digite o texto aqui" onkeyup="codeOrDecode()" cols="30" rows="10"></textarea>
+            </section>
+            
+            <div id="CaesarResult" class= "result"> Seu resultado sai aqui.</div>
+        </div>
+        <div id="base64">
+            <textarea name="base64" id="inputBase64" placeholder="Digite o texto aqui" onkeyup="base64CodeNDecode()" cols="30" rows="10"></textarea>
+            <div id="base64Result" class= "result"> Seu resultado sai aqui.</div>
+        </div>
+    </main>
+
+

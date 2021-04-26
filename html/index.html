@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Codificando Mensagens</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <script src="../js/principal.js"></script>
+    <script src="../js/funcionalidades.js"></script>
+
+<body>
+    <header class="cabecalho flex">
+        <img class="imgcabecalho" src="../imgs/logo_cabecalho.png">
+
+    </header>
+
+    <main class="container flex">
+
+
+        <div class="formulario">
+            <h1 class="titulo-formulario"> Codificando Mensagens</h1>
+            <select name="" id="selecao" onchange="codificacao()">
+                <option value="" disabled selected> Escolha uma Codificação</option>
+                <option id="ces" value="cesar"> Criptografia de Cesar</option>
+                <option id="b64" value="64">Criptografia 64</option>
+                <input type="number" id="incremento" onkeyup="validaIncremento()">
+            </select>
+            <p id="textoradio"> Criptografar ou Descriptografar?</p>
+            <form id="codOrDec"onchange="ajusteEnvio()" onchange="validaIncremento()">
+                <input type="radio" id="Criptografar" name="CriptoOuDescrip" checked="checked" value="Criptografar">Criptografar
+                <input type="radio" id="Descriptografar" name="CriptoOuDescrip" value="Descriptografar">Descriptografar
+            </form>
+            <form action="" id="textos">
+            <input class="textoEntrada" type="text" placeholder="digite a mensagem" required  onkeyup="base64()">
+            <input class="textoEntradaC" type="text" placeholder="digite a mensgem" required  onkeyup="validaIncremento()">
+            <textarea name="textoConvertido" id="txtConvertido"  >  </textarea>
+            <textarea name="textoConvertido" id="txtConvertidoC">  </textarea>
+            <button id="push" onclick="envio()">codificar e enviar</button>
+        </form>
+         </div>  
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="flex">
+        <img src="../imgs/logo_baixo.jpg" alt="logo_baixo">
+        <p class="textorodape"> Desenvolvido por MPGAMES 2021</p>
+    </footer class=" rodape-flex">
+    
+</body>
+
+</html>
