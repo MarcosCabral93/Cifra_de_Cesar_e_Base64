@@ -42,6 +42,7 @@ function  ajusteEnvio() { //funcao para alternar o botão de envio
     if (document.querySelector('#Descriptografar').checked){
     botaoCode.textContent = 'Decodificar e armazenar';
     botaoCode.style.display="block"
+    
     }
     else if(document.querySelector('#Criptografar').checked){
         botaoCode.textContent = 'codificar e enviar';
@@ -51,8 +52,4 @@ function  ajusteEnvio() { //funcao para alternar o botão de envio
         botaoCode.style.display="none"
     }
 }
-function envio(){//botão dentro so formulario já apaga todos os dados
-    var val=document.querySelector('.textoEntrada').value
-    var valC=document.querySelector('.textoEntradaC').value
-    if(val=='' ||valC=='')alert('Insira um campo valido')
-    }
+//function envio(){//botão dentro so formulario já apaga todos os dados

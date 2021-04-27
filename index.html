@@ -13,7 +13,7 @@
 
 <body>
     <header class="cabecalho flex">
-        <img class="imgcabecalho" src="imgs/logo_cima.jpg">
+        <img class="imgcabecalho" src="imgs/kj.jpg">
 
     </header>
 
@@ -34,8 +34,8 @@
                 <input type="radio" id="Descriptografar" name="CriptoOuDescrip" value="Descriptografar">Descriptografar
             </form>
             <form action="" id="textos">
-            <input class="textoEntrada" type="text" placeholder="digite a mensagem" required  >
-            <input class="textoEntradaC" type="text" placeholder="digite a mensgem" required >
+            <input class="textoEntrada" type="text" placeholder="digite a mensagem" required onkeyup="base64()" >
+            <input class="textoEntradaC" type="text" placeholder="digite a mensgem" required onkeyup="validaIncremento()">
             <textarea name="textoConvertido" id="txtConvertido"  >  </textarea>
             <textarea name="textoConvertido" id="txtConvertidoC">  </textarea>
             <button type="submit" id="push" onclick="envio()">codificar e enviar</button>
@@ -53,7 +53,7 @@
 
 
     <footer class="flex">
-        <img src="imgs/logo_baixo.jpg" alt="logo_baixo">
+        
         <p class="textorodape"> Desenvolvido por MPGAMES 2021</p>
     </footer class=" rodape-flex">
     
