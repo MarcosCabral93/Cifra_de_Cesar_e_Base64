@@ -13,7 +13,7 @@
 
 <body>
     <header class="cabecalho flex">
-        <img class="imgcabecalho" src="imgs/logo_cabecalho.png">
+        <img class="imgcabecalho" src="imgs/logo_cima.jpg">
 
     </header>
 
@@ -34,11 +34,12 @@
                 <input type="radio" id="Descriptografar" name="CriptoOuDescrip" value="Descriptografar">Descriptografar
             </form>
             <form action="" id="textos">
-            <input class="textoEntrada" type="text" placeholder="digite a mensagem" required  onkeyup="base64()">
-            <input class="textoEntradaC" type="text" placeholder="digite a mensgem" required  onkeyup="validaIncremento()">
+            <input class="textoEntrada" type="text" placeholder="digite a mensagem" required  >
+            <input class="textoEntradaC" type="text" placeholder="digite a mensgem" required >
             <textarea name="textoConvertido" id="txtConvertido"  >  </textarea>
             <textarea name="textoConvertido" id="txtConvertidoC">  </textarea>
-            <button id="push" onclick="envio()">codificar e enviar</button>
+            <button type="submit" id="push" onclick="envio()">codificar e enviar</button>
+            
         </form>
          </div>  
 
